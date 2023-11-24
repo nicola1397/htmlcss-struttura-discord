@@ -17,9 +17,13 @@ header > * {
 }
 
 .wrap {
-  width: 65%;
+  padding: 0 var(--page-gutter);
 }
 /* Regole */
+:root {
+  --page-gutter: 20%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -40,30 +44,30 @@ header {
   background-color: aquamarine;
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 20px var(--page-gutter);
+  box-sizing: content-box;
+}
+.w25 {
+  width: 25%;
+}
+
+.w50 {
+  width: 50%;
 }
 
 .head {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .nav li {
   border: 3px dashed black;
   display: inline-block;
+  flex: 1;
 }
 
-.img {
-  /* DEBUG */
-  background-color: pink;
-  width: 40%;
-}
-
-.text {
-  /* DEBUG */
-  background-color: dodgerblue;
-  width: 60%;
-}
+/* Download section 1 */
 
 .dwn1 {
   background-color: blue;
@@ -79,3 +83,56 @@ header {
   /* DEBUG */
   background-color: violet;
 }
+
+/* Sezioni Immagini - Testo */
+
+/* Common */
+.img {
+  /* DEBUG */
+  background-color: pink;
+  width: 40%;
+  height: 600px;
+}
+
+.text {
+  /* DEBUG */
+  background-color: dodgerblue;
+  width: 60%;
+  height: 600px;
+}
+
+/* imgtext */
+
+.imgtext {
+  background-color: white;
+  padding: 20px var(--page-gutter);
+  display: flex;
+  justify-content: center;
+}
+
+.imgtext2 {
+  background-color: gainsboro;
+  flex-direction: row-reverse;
+  padding: 20px var(--page-gutter);
+  display: flex;
+  justify-content: center;
+}
+
+/* Download section 2 */
+
+.dwn2 {
+  background-color: gainsboro;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 20px var(--page-gutter);
+}
+
+.dsection2 {
+  height: 900px;
+  width: 100%;
+  /* DEBUG */
+  background-color: green;
+}
+
+/* Last section */
