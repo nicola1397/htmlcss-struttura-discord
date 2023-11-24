@@ -3,10 +3,9 @@
   border: 3px dashed black;
 }
 
-header > * {
-  /* DEBUG HEADER */
+/* header > * {
   background-color: orange;
-}
+} */
 
 .grey {
   background-color: grey;
@@ -38,10 +37,18 @@ a {
   text-decoration: none;
 }
 
+/* font-family: 'Open Sans', sans-serif; */
+
+body * {
+  font-family: "Open Sans", sans-serif;
+}
+
 /* FORMATTAZIONE */
 
+/* HEADER */
+
 header {
-  background-color: aquamarine;
+  background-color: #255ee9;
   display: flex;
   justify-content: center;
   padding: 20px var(--page-gutter);
@@ -56,42 +63,126 @@ header {
   width: 50%;
 }
 
+.logo {
+  height: 50px;
+  align-self: center;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
 .head {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
+/* Formattazione link header */
 .nav {
-  padding: 0 var(--page-gutter);
+  padding: 0;
   display: flex;
   justify-content: center;
-  gap: 20px;
-  width: 50%;
+  gap: 40px;
+  width: 60%;
+  align-items: center;
+
+  /* TESTO */
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 .nav li {
   padding: 0 0;
   /* border: 3px dashed black; */
   display: inline-block;
-  flex: 1;
+  color: white;
+}
+
+/* Override link visitato */
+.nav li:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: white;
+}
+
+/* Pulsanti */
+
+.button {
+  width: 100px;
+  height: 50px;
+  border-style: none;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+  align-self: center;
+}
+
+.button:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 /* Download section 1 */
 
 .dwn1 {
   background-color: blue;
+  background-image: url(./img/jumbo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 800px;
   display: flex;
   justify-content: center;
   align-content: center;
   padding: 20px;
+  flex-shrink: 0;
 }
 
 .dsection1 {
   margin: 0 25%;
-  height: 500px;
+  height: max-content;
   /* DEBUG */
-  background-color: violet;
+  text-align: center;
+  align-self: center;
+}
+
+.title {
+  color: white;
+  font-size: 4.5rem;
+  font-weight: 900;
+  margin-bottom: 60px;
+}
+
+.paragraph {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.downloadbutton {
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: white;
+  border-style: none;
+  padding: 20px 30px;
+  border-radius: 50px;
+  margin: 20px 30px;
+}
+
+.blackbutton {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: #23272a;
+  border-style: none;
+  padding: 20px 30px;
+  border-radius: 50px;
+  margin: 20px 30px;
 }
 
 /* Sezioni Immagini - Testo */
