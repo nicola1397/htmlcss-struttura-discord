@@ -152,7 +152,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  gap: 40px;
+  gap: 60px;
   justify-content: center;
   padding: 20px var(--page-gutter);
 }
@@ -175,4 +175,15 @@ footer {
   height: 700px;
   flex-grow: 1;
   background-color: lightseagreen;
+}
+
+/* Footer buttons */
+
+.footlinks {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-content: center;
+  background-color: palegreen;
 }
