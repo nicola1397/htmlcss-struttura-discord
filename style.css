@@ -1,0 +1,35 @@
+.debug {
+  border: 3px dashed black;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  margin: 10%;
+}
+
+header {
+  min-height: 100px;
+}
+
+/* .topper {
+  display: flex;
+  justify-content: space-between;
+} */
+
+.img {
+  /* DEBUG */
+  background-color: pink;
+}
+
+.text {
+  /* DEBUG */
+  background-color: dodgerblue;
+}
+
+.download {
+  /* DEBUG */
+  background-color: pink;
+}
