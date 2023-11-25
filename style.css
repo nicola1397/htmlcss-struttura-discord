@@ -331,12 +331,22 @@ a:visited {
 
 /* Footer */
 
+.purpletitle {
+  color: #8ea1e1;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -3px;
+  padding: 40px 60px;
+  word-spacing: 10px;
+  line-height: 3rem;
+}
+
 footer {
-  background-color: dimgrey;
+  background-color: #23272a;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  gap: 60px;
+  gap: 20px;
   justify-content: center;
   padding: 20px var(--page-gutter);
 }
@@ -347,18 +357,55 @@ footer {
 }
 .social {
   width: 30%;
-  height: 700px;
   /* debug */
-  background-color: palevioletred;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.lingua {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding-left: 60px;
+}
+
+.lingua:hover {
+  cursor: pointer;
+}
+
+.flag {
+  max-height: 1.3rem;
 }
 
 .endpage-links {
-  border: 3px dotted black;
+  padding-top: 40px;
   display: flex;
   flex-direction: column;
-  height: 700px;
   flex-grow: 1;
-  background-color: lightseagreen;
+  color: #8ea1e1;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 3rem;
+}
+
+.endpage-links li {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+}
+
+.endpage-links li:hover {
+  text-decoration: underline;
+}
+
+.purpleline {
+  height: 3px;
+  background-color: #8ea1e1;
+  border: none;
 }
 
 /* Footer buttons */
@@ -369,5 +416,22 @@ footer {
   justify-content: space-between;
   height: 80px;
   align-content: center;
-  background-color: palegreen;
+}
+
+.buttonend {
+  color: white;
+  background-color: #8ea1e1;
+  box-sizing: border-box;
+  border-style: none;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+  height: 50px;
+  padding: 0 20px 0 20px;
+}
+
+.buttonend:hover {
+  cursor: pointer;
+  background-color: #b1c1f5;
+  transition-duration: 0.3s;
 }
