@@ -384,11 +384,6 @@ footer {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  color: #8ea1e1;
-  font-size: 1.5rem;
-  font-weight: 700;
-  letter-spacing: -1px;
-  line-height: 3rem;
 }
 
 .endpage-links li {
@@ -398,7 +393,15 @@ footer {
   line-height: 2.5rem;
 }
 
-.endpage-links li:hover {
+.endpage-links li:first-child {
+  color: #8ea1e1;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 3rem;
+}
+
+.endpage-links li:not(.label):hover {
   text-decoration: underline;
 }
 
@@ -408,7 +411,7 @@ footer {
   border: none;
 }
 
-/* Footer buttons */
+/* Footer "header" */
 
 .footlinks {
   padding: 10px 0;
