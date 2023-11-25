@@ -209,7 +209,8 @@ a:visited {
   color: #23272a;
   font-size: 3rem;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: -3px;
+  word-spacing: 10px;
   margin-bottom: 60px;
   line-height: 3.2rem;
 }
@@ -218,8 +219,10 @@ a:visited {
   padding: 0 40px 40px 40px;
   color: #23272a;
   font-size: 1.5rem;
-  font-weight: light;
+  font-weight: 500;
   line-height: 2rem;
+  letter-spacing: -1px;
+  word-spacing: 10px;
 }
 
 /* Immagini */
@@ -283,18 +286,47 @@ a:visited {
 /* Download section 2 */
 
 .dwn2 {
-  background-color: gainsboro;
+  background-color: #f6f6f6;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-content: center;
   padding: 20px var(--page-gutter);
+  text-align: center;
 }
 
-.dsection2 {
-  height: 900px;
-  width: 100%;
-  /* DEBUG */
-  background-color: green;
+.stars {
+  color: #23272a;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -3px;
+  padding: 40px 60px;
+  word-spacing: 10px;
+  line-height: 3.2rem;
+  background-image: url(./img/stars.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-self: center;
+}
+
+.downloadbutton2 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: #8ea1e1;
+  border-style: none;
+  padding: 20px 30px;
+  border-radius: 50px;
+  margin: 10px auto 150px auto;
+  width: fit-content;
+  align-self: center;
+}
+
+.downloadbutton2:hover {
+  text-align: center;
+  box-shadow: 0px 0px 20px #3a3a3a;
+  transition-duration: 0.3s;
+  cursor: pointer;
 }
 
 /* Footer */
