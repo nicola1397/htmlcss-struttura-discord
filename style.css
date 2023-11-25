@@ -438,3 +438,22 @@ footer {
   background-color: #b1c1f5;
   transition-duration: 0.3s;
 }
+
+/* Wave divider */
+
+.wave {
+  background-image: url(./img/wave.svg);
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  opacity: 3%; /* background-color: purple; */
+}
+
+.rwave {
+  background-image: url(./img/wave.svg);
+  background-position: center;
+  background-size: cover;
+  transform: scale(-1, -1);
+  height: 200px;
+  opacity: 3%; /* background-color: purple; */
+}
