@@ -425,7 +425,7 @@ footer {
   background-position: center;
   background-size: cover;
   height: 200px;
-  opacity: 3%; /* background-color: purple; */
+  opacity: 3%;
 }
 
 .rwave {
@@ -434,5 +434,5 @@ footer {
   background-size: cover;
   transform: scale(-1, -1);
   height: 200px;
-  opacity: 3%; /* background-color: purple; */
+  opacity: 3%;
 }
