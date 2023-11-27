@@ -244,16 +244,14 @@ a:visited {
 
 /* Sezioni container img-text */
 
-.imgrow:nth-of-type(even) {
-  background-color: white;
-  padding: 80px var(--page-gutter);
+.stdcontainer:nth-of-type(even) .imgrow {
+  padding: 60px var(--page-gutter);
   display: flex;
   justify-content: center;
   flex-grow: 1;
 }
 
-.imgrow:nth-of-type(odd) {
-  background-color: #f6f6f6;
+.stdcontainer:nth-of-type(odd) .imgrow {
   flex-direction: row-reverse;
   padding: 80px var(--page-gutter);
   display: flex;
@@ -264,7 +262,6 @@ a:visited {
 /* Download section 2 */
 
 .dwn2 {
-  background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -419,22 +416,31 @@ footer {
 }
 
 /* Wave divider */
-
-.wave {
-  background-image: url(./img/wave.svg);
-  background-position: center;
-  background-size: cover;
-  height: 200px;
-  opacity: 3%;
+.stdcontainer:nth-of-type(odd) {
+  background-color: #f6f6f6;
 }
 
-.rwave {
+.stdcontainer:nth-of-type(even) {
+  background-color: white;
+}
+
+.stdcontainer:nth-of-type(odd)::before {
+  content: "";
+  display: block;
   background-image: url(./img/wave.svg);
   background-position: center;
   background-size: cover;
   transform: scale(-1, -1);
-  height: 200px;
-  opacity: 3%;
+  height: 60px;
+}
+
+.stdcontainer:nth-of-type(odd):not(:last-of-type)::after {
+  content: "";
+  display: block;
+  background-image: url(./img/wave.svg);
+  background-position: center;
+  background-size: cover;
+  height: 60px;
 }
 
 /* SOCIAL ICONS */
