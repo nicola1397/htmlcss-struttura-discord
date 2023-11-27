@@ -436,3 +436,18 @@ footer {
   height: 200px;
   opacity: 3%;
 }
+
+/* SOCIAL ICONS */
+
+.icone {
+  margin: 20px 0 0 60px;
+}
+
+[class~="fa-brands"] {
+  size: 20px;
+  margin: 15px;
+}
+
+[class~="fa-brands"]:hover {
+  cursor: pointer;
+}
